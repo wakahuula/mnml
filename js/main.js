@@ -1,10 +1,11 @@
 (function() {
+  backgroundColorPicker = $('#backgroundColorPicker');
+  submitButton = $('#submitButton');
   loadOptions();
   submitHandler();
 })();
 
-var backgroundColorPicker = $('#backgroundColorPicker');
-var submitButton = $('#submitButton');
+var backgroundColorPicker, submitButton;
 
 function submitHandler() {
   submitButton.on('click', function() {
