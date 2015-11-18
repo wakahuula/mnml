@@ -2,7 +2,7 @@ function getConfigData() {
     var backgroundColorPicker = document.getElementById('backgroundColorPicker');
  
     var options = {
-      'backgroundColor': backgroundColorPicker.value
+      'backgroundColor': backgroundColorPicker.options[backgroundColorPicker.selectedIndex].value
     };
     // Save for next launch
     localStorage['backgroundColor'] = options['backgroundColor'];
