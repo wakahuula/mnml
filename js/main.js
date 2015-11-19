@@ -14,7 +14,8 @@ function getConfigData() {
     };
     // Save for next launch
     var hBackgroundColor = options['backgroundColor'];
-    localStorage['backgroundColor'] = GColor.GColorFromHex(hBackgroundColor);
+    var gColor = new GColor();
+    localStorage['backgroundColor'] = gColor.GColorFromHex(hBackgroundColor);
     console.log('Got options: ' + JSON.stringify(options));
     return options;
 }
