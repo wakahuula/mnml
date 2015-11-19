@@ -13,7 +13,8 @@ function getConfigData() {
       'backgroundColor': backgroundColorPicker.options[backgroundColorPicker.selectedIndex].value
     };
     // Save for next launch
-    localStorage['backgroundColor'] = options['backgroundColor'];
+    var hBackgroundColor = options['backgroundColor'];
+    localStorage['backgroundColor'] = GColorFromHex(hBackgroundColor);
     console.log('Got options: ' + JSON.stringify(options));
     return options;
 }
